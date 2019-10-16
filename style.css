@@ -1,0 +1,69 @@
+body {
+    margin: 0;   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.screen_container {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: white;
+    padding: 3rem;
+}
+
+.button_container {  
+    display: flex;
+    height: 70vh;
+}
+
+.screen_container input {
+    font-size: 4rem;
+    width: auto;
+    border: 0;
+    outline:none;
+    text-align:right;
+}
+
+
+
+
+.num {
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.numpad {
+    width: 33.33%;
+    background-color: rgb(82, 82, 82); 
+}
+.numpadb {
+    width: 100%;
+    flex-grow: 1;
+    background-color: rgb(109, 109, 109); 
+}
+
+button {
+    border: 0;
+    color: white;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
