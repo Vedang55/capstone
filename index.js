@@ -9,7 +9,7 @@ var operators = ['x','-','+','/'];
 
 function buttonclk(event){
         var elementClicked = event.target.innerHTML;
-        if(elementClicked != 'DEL' && elementClicked != '=' ){
+        if(elementClicked != 'C' && elementClicked != '=' ){
         
             if(operators.includes(elementClicked) && operators.includes(inputField.value[inputField.value.length - 1])){
                 inputField.value = inputField.value.substring(0, inputField.value.length - 1) + elementClicked;
@@ -19,7 +19,7 @@ function buttonclk(event){
             }
             updateField();
         }
-        else if(elementClicked === 'DEL') {
+        else if(elementClicked === 'C') {
             if(inputField.value.length > 1){
                 inputField.value = inputField.value.substring(0, inputField.value.length - 1);
                 updateField();
