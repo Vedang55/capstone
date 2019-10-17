@@ -7,10 +7,10 @@ body {
 }
 
 .screen_container {
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
     background-color: white;
     padding: 3rem;
@@ -18,19 +18,15 @@ body {
 
 .button_container {  
     display: flex;
-    height: 70vh;
+    height: 60vh;
 }
 
 .screen_container input {
-    font-size: 4rem;
-    width: auto;
+    font-size: 7rem;
     border: 0;
     outline:none;
     text-align:right;
 }
-
-
-
 
 .num {
     display: flex;
@@ -59,14 +55,6 @@ button {
 }
 
 #answerfield{
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
 }
-
-
-
-
-
-
-
-
