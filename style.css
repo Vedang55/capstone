@@ -33,7 +33,6 @@ body {
 
 
 .num {
-    width: 75vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -41,23 +40,27 @@ body {
 .bar {
     display: flex;
     flex-direction: column;
-    width: 25vw;
 }
 
 .numpad {
-    width: 33.33%;
+    width: 25vw;
     background-color: rgb(82, 82, 82); 
 }
 .numpadb {
-    width: 100%;
-    flex-grow: 1;
+    width: 25vw;
     background-color: rgb(109, 109, 109); 
+    flex-grow: 1;
 }
 
 button {
     border: 0;
     color: white;
     font-size: 3rem;
+}
+
+#answerfield{
+    font-size: 5rem;
+    margin: 0;
 }
 
 
