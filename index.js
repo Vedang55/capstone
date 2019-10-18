@@ -59,7 +59,7 @@ function updateField(){
         }
     }
 
-    if(inputField.value.length*60 > window.screen.width){
+    if(inputField.value.length*40 > window.screen.width){
         inputField.style.fontSize = "5vh"; 
     }
     else{

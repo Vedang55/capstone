@@ -35,22 +35,22 @@ html, body { height: 100% }
 .num {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(44, 44, 44); 
 }
 
 .bar {
     display: flex;
     flex-direction: column;    
-    background-color: rgb(109, 109, 109); 
+    background-color: rgb(85, 85, 85); 
 }
 
 .numpad {
     width: 25vw;
-    background-color: rgb(82, 82, 82); 
+    background-color: rgb(44, 44, 44); 
 }
 .numpadb {
     width: 25vw;
-    background-color: rgb(109, 109, 109); 
+    background-color: rgb(85, 85, 85); 
     flex-grow: 1;
 }
 
@@ -58,8 +58,26 @@ button {
     border: 0;
     color: white;
     font-size: 5vh;
+    border-radius: 100vw;
 }
 
 #answerfield{
     font-size: 5vh;
 }
+
+
+/* animations */
+
+button {
+    background-position: center;
+    transition: background 0.8s;
+  }
+ 
+  button:active {
+    background-color: rgb(3, 3, 3);
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+
+  
