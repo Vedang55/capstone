@@ -9,8 +9,11 @@ var operators = ['x','-','+','/'];
 
 function buttonclk(event){
         var elementClicked = event.target.innerHTML;
+        if(event.target.tagName != 'BUTTON'){
+            return;
+        }
+
         if(elementClicked != 'C' && elementClicked != '=' ){
-        
             if(operators.includes(elementClicked) && operators.includes(inputField.value[inputField.value.length - 1])){
                 inputField.value = inputField.value.substring(0, inputField.value.length - 1) + elementClicked;
             }
@@ -40,6 +43,8 @@ function buttonclk(event){
 
 function updateField(){  
     try{
+        
+    
         answerField.innerHTML = eval(inputField.value.replace(/x/g,'*'));
         if(answerField.innerHTML != inputField.value){
             

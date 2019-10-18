@@ -6,6 +6,7 @@ html, body { height: 100% }
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .screen_container {
@@ -34,11 +35,13 @@ html, body { height: 100% }
 .num {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(82, 82, 82);
 }
 
 .bar {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    background-color: rgb(109, 109, 109); 
 }
 
 .numpad {
@@ -59,5 +62,4 @@ button {
 
 #answerfield{
     font-size: 5vh;
-    margin: 0;
 }
