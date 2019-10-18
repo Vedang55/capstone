@@ -18,10 +18,11 @@ cbtn.addEventListener("touchleave", dregt);
 
 	
 
-
+var tout;
 function regt(){
     cbtnc = 1;
-    setTimeout(function(){
+    clearTimeout(tout);
+    tout = setTimeout(function(){
         if(cbtnc == 1){
             inputField.value = "";
             answerField.innerHTML = "";
@@ -31,6 +32,7 @@ function regt(){
 
 function dregt() {
     cbtnc = 0;
+    clearTimeout(tout);
 }
 
 
@@ -89,11 +91,11 @@ function updateField(){
         }
     }
 
-    if(inputField.value.length*40 > window.screen.width){
+    if(inputField.value.length*60 > window.screen.width){
         inputField.style.fontSize = "5vh"; 
     }
     else{
-        inputField.style.fontSize = "10vh" ; 
+        inputField.style.fontSize = "10vh"; 
     }
 
 
