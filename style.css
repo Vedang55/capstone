@@ -59,6 +59,7 @@ button {
     color: white;
     font-size: 5vh;
     border-radius: 100vw;
+    user-select:none;
 }
 
 #answerfield{

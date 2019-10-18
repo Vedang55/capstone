@@ -5,11 +5,41 @@ b.addEventListener('click',buttonclk)
 var inputField = document.querySelector('#inputField');
 var answerField = document.getElementById("answerfield")
 var operators = ['x','-','+','/'];
+var cbtn = document.getElementById("cbtn");
+var cbtnc = 0;
+
+cbtn.addEventListener("mousedown", regt);
+cbtn.addEventListener("mouseup", dregt);
+cbtn.addEventListener("touchstart", regt);
+cbtn.addEventListener("touchend", dregt);
+cbtn.addEventListener("touchcancel", dregt);
+cbtn.addEventListener("touchcancel", dregt);
+cbtn.addEventListener("touchleave", dregt);
+
+	
+
+
+function regt(){
+    cbtnc = 1;
+    setTimeout(function(){
+        if(cbtnc == 1){
+            inputField.value = "";
+            answerField.innerHTML = "";
+        }
+    },700);
+}
+
+function dregt() {
+    cbtnc = 0;
+}
+
+
+
 
 
 function buttonclk(event){
         var elementClicked = event.target.innerHTML;
-        if(event.target.tagName != 'BUTTON'){
+        if(event.target.tagName != 'BUTTON' || (operators.includes(event.target.innerHTML) && inputField.value === "" )){
             return;
         }
 
