@@ -1,5 +1,6 @@
 body {
-    margin: 0;   
+    margin: 0;  
+    font-family: 'Courier New', Courier, monospace; 
 }
 html, body { height: 100% }
 
@@ -8,25 +9,26 @@ html, body { height: 100% }
 }
 
 .screen_container {
-    height: 40%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     background-color: white;
-    padding: 3rem;
+    padding: 2vw;
 }
 
 .button_container {  
     display: flex;
-    height: 60%;
+    height: 70%;
 }
 
 .screen_container input {
-    font-size: 5rem;
+    font-size: 10vh;
     border: 0;
     outline:none;
     text-align:right;
+    width: 100%;
 }
 
 .num {
@@ -52,10 +54,10 @@ html, body { height: 100% }
 button {
     border: 0;
     color: white;
-    font-size: 2.5rem;
+    font-size: 5vh;
 }
 
 #answerfield{
-    font-size: 3rem;
+    font-size: 5vh;
     margin: 0;
 }

@@ -54,7 +54,20 @@ function updateField(){
         }
     }
 
+    if(inputField.value.length*60 > window.screen.width){
+        inputField.style.fontSize = "5vh"; 
+    }
+    else{
+        inputField.style.fontSize = "10vh" ; 
+    }
+
+
+
+    inputField.focus();
+
 }
+
+
 
 
 
