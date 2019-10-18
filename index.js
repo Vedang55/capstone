@@ -41,7 +41,7 @@ function dregt() {
 
 function buttonclk(event){
         var elementClicked = event.target.innerHTML;
-        if(event.target.tagName != 'BUTTON' || (operators.includes(event.target.innerHTML) && inputField.value === "" )){
+        if(event.target.tagName != 'BUTTON' || (['/','x','+'].includes(event.target.innerHTML) && inputField.value === "" )){
             return;
         }
 
