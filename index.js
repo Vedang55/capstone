@@ -1,5 +1,7 @@
 var a = document.querySelector('.num');
 var b = document.querySelector('.bar');
+var scont = document.querySelector('.screen_container');
+
 a.addEventListener('click',buttonclk)
 b.addEventListener('click',buttonclk)
 var inputField = document.querySelector('#inputField');
@@ -23,9 +25,18 @@ function regt(){
     cbtnc = 1;
     clearTimeout(tout);
     tout = setTimeout(function(){
+
         if(cbtnc == 1){
+            color = inputField.style.backgroundColor;
+            inputField.style.backgroundColor = 'purple'; 
+            scont.style.backgroundColor = 'purple';
             inputField.value = "";
             answerField.innerHTML = "";
+
+            setTimeout(() => {
+                inputField.style.backgroundColor  = color;
+                scont.style.backgroundColor  = color;
+            }, 100);
         }
     },700);
 }
