@@ -95,16 +95,18 @@ button {
 
 button {
     background-position: center;
+    transition: 
+    background 0.2s linear 0s;
 
   }
 
  
   button:active {
     background-color: rgb(153, 0, 255);
-    box-shadow: 0 0 5px 2px;
+    box-shadow: 0 0 5px 3px;
     background-size: 100%;
     transition: 
-        background 0.4s linear 0s;
+    background 0s linear 0s;
   }
 
   #cbtn:active{
@@ -112,8 +114,9 @@ button {
     transform: rotate(360deg);
     background-color: rgb(163, 19, 19);
     transition: 
-        transform 0.3s ease-out 0.5s, 
-        border-radius 0.7s ease-out 0s;
+    background 0.5s ease-out 0s,
+    transform 0.3s ease-out 0.5s, 
+    border-radius 0.7s ease-out 0s;
   }
 
 
