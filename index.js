@@ -92,10 +92,10 @@ function updateField(){
     }
 
     if(inputField.value.length*60 > window.screen.width){
-        inputField.style.fontSize = "5vh"; 
+        inputField.style.fontSize = "7vh"; 
     }
     else{
-        inputField.style.fontSize = "10vh"; 
+        inputField.style.fontSize = "12vh"; 
     }
 
 

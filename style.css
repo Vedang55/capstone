@@ -1,8 +1,10 @@
 body {
     margin: 0;  
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: 'Crimson Text', serif;
 }
-html, body { height: 100% }
+html, body { 
+    height: 100%;
+}
 
 * {
     box-sizing: border-box;
@@ -10,47 +12,59 @@ html, body { height: 100% }
 }
 
 .screen_container {
-    height: 30%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: white;
+    background-color: rgb(65, 65, 65);
     padding: 2vw;
 }
 
-.button_container {  
-    display: flex;
-    height: 70%;
+
+#answerfield {
+    font-size: 5.5vh;
+    color: rgb(255, 255, 255);
 }
 
 .screen_container input {
-    font-size: 15vw;
+    background-color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
     border: 0;
     outline:none;
     text-align:right;
     width: 100%;
 }
 
+.button_container {  
+    display: flex;
+    height: 65%;
+}
+
+
+
 .num {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(44, 44, 44); 
+    background-color: rgb(0, 0, 0); 
 }
 
 .bar {
     display: flex;
     flex-direction: column;    
-    background-color: rgb(85, 85, 85); 
+    background-color: rgb(0, 0, 0); 
+
 }
 
 .numpad {
     width: 25vw;
-    background-color: rgb(44, 44, 44); 
+    background-color: rgb(0, 0, 0); 
+    
+
 }
 .numpadb {
     width: 25vw;
-    background-color: rgb(85, 85, 85); 
+    background-color: rgb(0, 0, 0); 
     flex-grow: 1;
 }
 
@@ -60,25 +74,32 @@ button {
     font-size: 5vh;
     border-radius: 100vw;
     user-select:none;
+    box-sizing: border-box;
 }
 
-#answerfield {
-    font-size: 6vw;
-}
 
 
 /* animations */
 
 button {
     background-position: center;
-    transition: background 0.8s;
+    transition-duration: 0.7s;
+    transition-property: background, border-radius;
   }
+
  
   button:active {
-    background-color: rgb(3, 3, 3);
+    background-color: rgb(153, 0, 255);
+    box-shadow: 0 0 1px 1px;
     background-size: 100%;
-    transition: background 0s;
   }
+
+  #cbtn:active{
+    border-radius: 0;
+    background-color: red;
+  }
+
+
   
 
   
