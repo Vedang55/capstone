@@ -95,8 +95,7 @@ button {
 
 button {
     background-position: center;
-    transition-duration: 0.4s, 0.7s, 0.7s;
-    transition-property: background, border-radius, transform;
+
   }
 
  
@@ -104,12 +103,17 @@ button {
     background-color: rgb(153, 0, 255);
     box-shadow: 0 0 5px 2px;
     background-size: 100%;
+    transition: 
+        background 0.4s linear 0s;
   }
 
   #cbtn:active{
     border-radius: 0;
     transform: rotate(360deg);
     background-color: rgb(163, 19, 19);
+    transition: 
+        transform 0.3s ease-out 0.5s, 
+        border-radius 0.7s ease-out 0s;
   }
 
 
